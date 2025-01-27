@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue au Musée </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            color: #4a4a4a;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #ffe4e1;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: #4a4a4a !important;
+        }
+        .navbar-nav .nav-link {
+            color: #4a4a4a;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #2e8b57;
+        }
+        .header {
+            background-color: #e8f8f5;
+            color: #4a4a4a;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            background-color: #fff;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .card-title {
+            color: #2e8b57;
+        }
+        .btn-primary {
+            background-color: #ffb6c1;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #e0a3af;
+        }
+        footer {
+            background-color: #ffe4e1;
+            color: #4a4a4a;
+        }
+        .header {
+            background-image: url('/static/images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Musée Bardo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/scan">Scanner un QR Code</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section principale -->
+    <header class="text-center py-5 header">
+        <div class="container">
+            <h1 class="display-4">Bienvenue au Musée Bardo</h1>
+            <p class="lead">Explorez les trésors historiques et culturels de notre patrimoine.</p>
+        </div>
+    </header>
+
+    <!-- Liste des monuments -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: #2e8b57;">Nos Monuments</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm">
+                        <img src="/static/images/skyphos.jpeg" class="card-img-top" alt="Skyphos Attique">
+                        <div class="card-body">
+                            <h5 class="card-title">Skyphos Attique</h5>
+                            <p class="card-text">Provenance : Carthage<br>Datation : VIIIème siècle av. J.-C.<br>Matière : Terre cuite</p>
+                            <a href="/monument/skyphos" class="btn btn-primary">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm">
+                        <img src="/static/images/apollon.jpeg" class="card-img-top" alt="Apollon">
+                        <div class="card-body">
+                            <h5 class="card-title">Apollon</h5>
+                            <p class="card-text">Provenance : Bulla Regia<br>Datation : IIème siècle ap. J.-C.<br>Matière : Marbre</p>
+                            <a href="/monument/apollon" class="btn btn-primary">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2025 Musée Bardo. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/scripts/main.js" defer></script>
+</body>
+</html>
