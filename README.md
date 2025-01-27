@@ -2,7 +2,7 @@
 
 ## Description
 
-**Porteur d'histoires interactif** is a project aimed at modernizing the experience of visitors to cultural sites using technology. The focus is on offering real-time notifications based on geolocation and proximity detection, along with interactive features to enrich the user experience.
+**Smart Tourism Guide** is a project aimed at modernizing the experience of visitors to cultural sites using technology. The focus is on offering real-time notifications based on geolocation and proximity detection, along with interactive features to enrich the user experience.
 
 ## Features Implemented
 
